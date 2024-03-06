@@ -12,7 +12,7 @@ export default {
   components: {
     ModalContainer
   }
-}
+}asd
 </script>
 
 <style lang="less">

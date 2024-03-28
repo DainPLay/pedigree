@@ -72,6 +72,36 @@ export default {
       'editPerson'
     ]),
     editPersonHandler () {
+      for (let i = 0; i < this.form.militaries.length; i++) {
+        if (this.form.militaries[i].length === 0) {
+          alert('Ошибка. Форма (Военная служба ' + (i + 1) + ') пустая!');
+        return;
+        }
+      }
+      for (let i = 0; i < this.form.weddings.length; i++) {
+        if (this.form.weddings[i].length === 0) {
+          alert('Ошибка. Форма (Свадьба ' + (i + 1) + ') пустая!');
+        return;
+        }
+      }
+      for (let i = 0; i < this.form.educations.length; i++) {
+        if (this.form.educations[i].length === 0) {
+          alert('Ошибка. Форма (Образование ' + (i + 1) + ') пустая!');
+        return;
+        }
+      }
+      for (let i = 0; i < this.form.works.length; i++) {
+        if (this.form.works[i].length === 0) {
+          alert('Ошибка. Форма (Работа ' + (i + 1) + ') пустая!');
+        return;
+        }
+      }
+      for (let i = 0; i < this.form.children.length; i++) {
+        if (this.form.children[i].length === 0) {
+          alert('Ошибка. Форма (Ребёнок ' + (i + 1) + ') пустая!');
+        return;
+        }
+      }
       this.editPerson(this.form)
       this.goBack()
     },
